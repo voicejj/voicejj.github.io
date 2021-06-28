@@ -1,2 +1,0 @@
-# voicejj.github.io
-love
