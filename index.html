@@ -37,11 +37,16 @@
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <audio src="love.mp3" autoplay="autoplay"></audio>
+            <audio src="love.mp3" autoplay="autoplay" loop="true" id="audio"></audio>
         </div>
     
-    <script>
-    </script>
+    <!--下面这段代码用来解决不能在ios上自动播放 -->
+    <script type="text/javascript">
+        $(function () {
+            $("#audio")[0].play();
+        })
+    </script>
+
 
     <script>
     (function(){
